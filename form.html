@@ -7,11 +7,50 @@
     <meta name="author" content="Elsa Ringvall, Elvira Pääjärvi, Kimberly Cicek, Rebecca Skillhammar ">
     <title>Intresseformulär Trygga tassar</title>
 </head>
+
 <body>
     <h1>Intresseformulär för adoption</h1>
     <form>
-        <p>blabla</p>
-        
+        <div>
+            <label for="firstname">Förnamn</label>
+            <input type="text" id="firstname" name="firstname" required>
+        </div>
+        <div>
+            <label for="lastname">Efternamn</label>
+            <input type="text" id="lastname" name="lastname" required>
+        </div>
+        <div>
+            <label for="email">E-postadress</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <p>Boendesituation</p>
+        <div>
+            <input type="radio" name="housing" value="1" id="smallapartment" required><label for="smallapartment">Liten lägenhet (mindre än 30 kvm)</label>
+        </div>
+        <div>
+            <input type="radio" name="housing" value="2" id="bigapartment"><label for="bigapartment">Stor lägenhet (större än 30 kvm)</label>
+        </div>
+        <div>
+            <input type="radio" name="housing" value="3" id="smallhouse"><label for="smallhouse">Litet hus</label>
+        </div>
+        <div>
+            <input type="radio" name="housing" value="4" id="bighouse"><label for="bighouse">Stort hus</label>
+        </div>
+        <div>
+            <label for="otherhousing">Annat boende</label>
+            <input type="text" id="otherhousing" name="otherhousing">
+        </div>
+
+        <div>
+            <label for="erfarenhet">Tidigare erfarenhet av katter</label>
+            <textarea rows="5" cols="50" id="erfarenhet" name="erfarenhet" required></textarea>
+        </div>
+        <div>
+            <label for="annaninfo">Annan info</label>
+            <textarea rows="5" cols="50" id="annaninfo" name="annaninfo"></textarea>
+        </div>
+        <button type="submit">Skicka</button>
     </form>
 </body>
+
 </html>
