@@ -1,0 +1,262 @@
+  /* 
+   TRYGG TASSAR – BASSTILMALL
+   Gäller alla sidor
+  */
+
+/* Nollställning / grundinställningar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Grundinställningar för hela sidan */
+body {
+    background-color: #ffffff; /* Vit bakgrund */
+    color: #000000;            /* Svart brödtext */
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+    
+}
+
+/* 
+   FÄRGER
+  
+   Lila: #acb2d3
+   Rosa: #edcccb
+   Blå:  #d8ebfd
+   Gul:  #fdf3d6
+   */
+
+/*RUBRIKER (Bangla-font)*/
+
+h1, h3, h4, h5, h6 {
+    font-family: "Bangla MN", "Georgia", serif;
+    font-weight: 700;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+   }
+
+   h2 {
+    font-family: "Bangla MN", "Georgia", serif;
+    font-weight: 700;
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+    background-color: #fdf3d6;
+    margin-bottom: 20px;
+   }
+
+
+/*HEADER*/
+header {
+  background-color: #edcccb;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  padding: 10px 0;
+}
+
+/* Layout för logga + rubrik/meny */
+.header-inner {
+  display: flex;
+  align-items: center;         
+  justify-content: space-between;
+  padding: 10px 40px;
+}
+
+/* Loggan i vänster hörn */
+.logo {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  margin-left: 0;
+}
+
+/* Rubrik + meny i mitten */
+.header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;          
+  text-align: center;
+  flex: 1;                      
+}
+
+/* Rubriken */
+header h1 {
+  font-family: "Bangla MN", Georgia, serif;
+  font-size: 2rem;
+  margin: 0 0 0.4rem 0;
+  line-height: 1;
+}
+
+/* Menyn */
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Länkar */
+nav a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+  background-color: transparent;
+  padding: 6px 16px;
+  border-radius: 999px;
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.2s ease;
+}
+
+/* Hovereffekt */
+nav a:hover {
+  background-color: #acb2d3;
+  color: #ffffff;
+  transform: scale(1.05);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+/*MAIN*/
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: #d8ebfd; /* Blå */
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #000000;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.2rem 0;
+}
+
+footer a {
+    color: #000000;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+ 
+   
+
+
+
+
+
+
+  /*FÖRSTASIDA - VÅRA KATTER*/
+
+ 
+.intro-text {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+/* Sektionen som innehåller alla kattkort */
+.vara-katter {
+  margin-top: 3rem;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Gridlayout för alla katter */
+.vara-katter > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  align-items: stretch;
+  padding: 10px;
+}
+
+/* Varje kattkort */
+.vara-katter article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fdf3d6; /* Ljusgul bakgrund */
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover-effekt på kattkort */
+.vara-katter article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+/*Katt Artiklar*/
+.katt-articles ul {
+  text-align: left;
+  margin-bottom: 1rem;
+  list-style-type: none;
+}
+
+.katt-articles li {
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+/* Kattbilder */
+.vara-katter img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+/* Kattnamn */
+.vara-katter h3 {
+  font-family: "Bangla MN", "Georgia", serif;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+
+/* Intresseanmälan-knapp */
+.interest-button {
+  display: inline-block;
+  background-color: #acb2d3; /* Lila */
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.25s ease-in-out;
+  margin-top: auto;
+}
+
+/* Hover-effekt på knappen */
+.interest-button:hover {
+  background-color: #8f96bd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
