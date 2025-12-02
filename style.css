@@ -276,3 +276,11 @@ footer a:hover {
   border-radius: 10px;
   margin-left: 20px;
 }
+/* Stil för paragraf-styckena i guiden */
+.p-guide {
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-left: 20px;
+}
