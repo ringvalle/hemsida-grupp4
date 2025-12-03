@@ -3,24 +3,29 @@
    Gäller alla sidor
   */
 
-  /* Nollställning / grundinställningar */
-  * {
+/* Nollställning / grundinställningar */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-
-  /* Grundinställningar för hela sidan */
-  body {
-    background-color: #ffffff;
-    /* Vit bakgrund */
-    color: #000000;
-    /* Svart brödtext */
-    font-family: "Inter", sans-serif;
-    line-height: 1.6;
-    
 }
 
+/* Grundinställningar för hela sidan */
+body {
+    background-color: #ffffff; /* Vit bakgrund */
+    color: #000000;            /* Svart brödtext */
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+ }   
+
+/*MAIN*/    
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+}
 /* 
    FÄRGER
   
@@ -30,21 +35,17 @@
    Gul:  #fdf3d6
    */
 
-  /*RUBRIKER (Bangla-font)*/
+/*RUBRIKER (Bangla-font)*/
 
-  h1,
-  h3,
-  h4,
-  h5,
-  h6 {
+h1, h3, h4, h5, h6 {
     font-family: "Bangla MN", "Georgia", serif;
     font-weight: 700;
     color: #000000;
     padding: 20px;
     text-align: center;
-  }
+   }
 
-  h2 {
+   h2 {
     font-family: "Bangla MN", "Georgia", serif;
     font-weight: 700;
     color: #000000;
@@ -52,45 +53,45 @@
     text-align: center;
     background-color: #fdf3d6;
     margin-bottom: 20px;
-  }
+   }
 
 
-  /*HEADER*/
-  header {
-    background-color: #edcccb;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    width: 100%;
-    padding: 10px 0;
-  }
+/*HEADER*/
+header {
+  background-color: #edcccb;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  padding: 10px 0;
+}
 
-  /* Layout för logga + rubrik/meny */
-  .header-inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 40px;
-  }
+/* Layout för logga + rubrik/meny */
+.header-inner {
+  display: flex;
+  align-items: center;         
+  justify-content: space-between;
+  padding: 10px 40px;
+}
 
-  /* Loggan i vänster hörn */
-  .logo {
-    height: 80px;
-    width: auto;
-    object-fit: contain;
-    display: block;
-    margin-left: 0;
-  }
+/* Loggan i vänster hörn */
+.logo {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  margin-left: 0;
+}
 
-  /* Rubrik + meny i mitten */
-  .header-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    flex: 1;
-  }
+/* Rubrik + meny i mitten */
+.header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;          
+  text-align: center;
+  flex: 1;                      
+}
 
 /* Rubriken */
 header h1 {
@@ -100,27 +101,36 @@ header h1 {
   line-height: 1;
 }
 
-  /* Menyn */
-  nav ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
-    margin: 0;
-    padding: 0;
-  }
+.header-gul-rubrik {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
 
-  /* Länkar */
-  nav a {
-    text-decoration: none;
-    color: #000000;
-    font-weight: 500;
-    background-color: transparent;
-    padding: 6px 16px;
-    border-radius: 999px;
-    transition: background-color 0.25s ease, color 0.25s ease, transform 0.2s ease;
-  }
+/* Menyn */
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Länkar */
+nav a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+  background-color: transparent;
+  padding: 6px 16px;
+  border-radius: 999px;
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.2s ease;
+}
 
 /* Hovereffekt */
 nav a:hover {
@@ -129,41 +139,46 @@ nav a:hover {
   transform: scale(1.05);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
-/*MAIN*/
 
-main {
-    max-width: 1100px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    padding: 20px;
-}
 
-  /*FOOTER*/
 
-  footer {
-    background-color: #d8ebfd;
-    /* Blå */
+
+/*FOOTER*/
+
+footer {
+    background-color: #d8ebfd; /* Blå */
     text-align: center;
     padding: 1rem;
     font-size: 0.9rem;
     color: #000000;
     margin-top: 2rem;
-  }
+}
 
-  footer p {
+footer p {
     margin: 0.2rem 0;
-  }
+}
 
-  footer a {
+footer a {
     color: #000000;
     text-decoration: none;
-  }
+}
 
-  footer a:hover {
+footer a:hover {
     text-decoration: underline;
-  }
+}
 
- 
+ /* Stil för kontaktinformationen i footern- (Elvira) */
+#kontakt {
+font-weight: 100;
+text-decoration: underline;
+}
+  #kontakt p {
+    background-color:#BAD7F2 ;
+    padding: 10px;
+    border-radius: 25px;
+    display: inline-block;
+    margin: 10px;
+  }
    
 
 
@@ -173,96 +188,93 @@ main {
 
   /*FÖRSTASIDA - VÅRA KATTER*/
 
-
-  .intro-text {
+ 
+.intro-text {
     font-size: 1.1rem;
     margin-bottom: 1rem;
     text-align: center;
     max-width: 900px;
     margin: 0 auto;
-  }
+}
 
 
-  /* Sektionen som innehåller alla kattkort */
-  .vara-katter {
-    margin-top: 3rem;
-    text-align: center;
-    padding: 20px;
-  }
+/* Sektionen som innehåller alla kattkort */
+.vara-katter {
+  margin-top: 3rem;
+  text-align: center;
+  padding: 20px;
+}
 
-  /* Gridlayout för alla katter */
-  .vara-katter>div {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-    align-items: stretch;
-    padding: 10px;
-  }
+/* Gridlayout för alla katter */
+.vara-katter > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  align-items: stretch;
+  padding: 10px;
+}
 
-  /* Varje kattkort */
-  .vara-katter article {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #fdf3d6;
-    /* Ljusgul bakgrund */
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    text-align: center;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
+/* Varje kattkort */
+.vara-katter article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fdf3d6; /* Ljusgul bakgrund */
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
-  /* Hover-effekt på kattkort */
-  .vara-katter article:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
-  }
+/* Hover-effekt på kattkort */
+.vara-katter article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
 
-  /*Katt Artiklar*/
-  .katt-articles ul {
-    text-align: left;
-    margin-bottom: 1rem;
-    list-style-type: none;
-  }
+/*Katt Artiklar*/
+.katt-articles ul {
+  text-align: left;
+  margin-bottom: 1rem;
+  list-style-type: none;
+}
 
-  .katt-articles li {
-    margin-bottom: 0.3rem;
-    font-size: 0.9rem;
-    text-decoration: none;
-  }
+.katt-articles li {
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+/* Kattbilder */
+.vara-katter img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
 
-  /* Kattbilder */
-  .vara-katter img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 0.5rem;
-  }
-
-  /* Kattnamn */
-  .vara-katter h3 {
-    font-family: "Bangla MN", "Georgia", serif;
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-  }
+/* Kattnamn */
+.vara-katter h3 {
+  font-family: "Bangla MN", "Georgia", serif;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
 
 
-  /* Intresseanmälan-knapp */
-  .interest-button {
-    display: inline-block;
-    background-color: #acb2d3;
-    /* Lila */
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 500;
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    transition: all 0.25s ease-in-out;
-    margin-top: auto;
-  }
+/* Intresseanmälan-knapp */
+.interest-button {
+  display: inline-block;
+  background-color: #acb2d3; /* Lila */
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.25s ease-in-out;
+  margin-top: auto;
+}
 
 /* Hover-effekt på knappen */
 .interest-button:hover {
@@ -271,92 +283,93 @@ main {
   transform: scale(1.05);
 }
 
-  /*OM OSS*/
 
-  .omossimg {
-    border-radius: 8px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    width: 400px;
-  }
+/*ADOPTIONSPROCESSEN*/
 
-.omossimgwrap {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  max-width: 900px;
-  margin: 0 auto;
-  background-color: #fdf3d6;
-  border-radius: 8px;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
+.adoption-title {
+    text-align: center;
+    margin-bottom: 50px;
 }
-  .omosstext {
+
+.adoption-title h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+
+/* Rad-layout – 50/50 */
+.step-row {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+}
+
+.step-row.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Textdel – 50% bredd på desktop */
+.step-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.step-text h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.step-text p {
+    margin-bottom: 15px;
     font-size: 1.1rem;
-    margin-bottom: 1rem;
-    max-width: 60ch;
-    margin: 0 auto;
-  }
-p+p {
-  text-indent: 1.5rem;
 }
 
-  /*FORMULÄR*/
-
-  form {
-    background-color: #fdf3d6;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  }
-
-  input,
-  textarea {
-    margin: 0.2rem;
-    border: 1px solid #acb2d3;
-    border-radius: 5px;
-  }
-
-  #formsection {
+/* Bilddel – 50% bredd + bild skalas till textens höjd */
+/* NYTT – tvingar bilderna att aldrig bli högre än texten */
+.step-image {
+    flex: 1;
+    min-width: 300px;
     display: flex;
     justify-content: center;
-    padding: 0.2rem;
-    padding-top: 1rem;
-  }
-
- .labelform {
-      display: inline-block;
-      width: 7rem;
-      margin-bottom: 0.5rem;
+    align-items: center;
+    overflow: hidden;                /* ny rad */
+    max-height: 520px;               /* ny rad – justera efter smak */
 }
 
-.radiobutton{
-  margin: 0.5rem;
+.step-image img {
+    width: 100%;
+    height: 100%;                    /* ändrat från "auto" */
+    max-width: 100%;
+    max-height: 520px;               /* samma värde som ovan */
+    object-fit: contain;             /* eller "cover" om du vill beskära */
+    object-position: center;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
-.boendesituation {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+
+
+
+/*GUIDE VID ADOPTION*/
+
+/* Stil för månad-rubrikerna */
+.månaderna {
+  color: #5C6AC4;
+  background-color:#fdf3d6;
+  display: inline-block;
+  padding: 20px;
+ margin: 20px;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+/* Stil för paragraf-styckena i guiden */
+.p-guide {
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-left: 20px;
 }
 
-  /*Stilsättning av intresseanmälanknapp plus hover och animation*/
-
-  #formbutton {
-    font-size: 1.2rem;
-    background-color: #edcccb;
-    padding: 0.2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    border-radius: 10px;
-    border: none;
-    transition: all 0.25s ease-in-out;
-    display: block;
-    margin: 1rem auto;
-  }
-
-  #formbutton:hover {
-    background-color: #acb2d3;
-    color: #ffffff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    transform: scale(1.05);
-  }
