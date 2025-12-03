@@ -373,3 +373,92 @@ text-decoration: underline;
   margin-left: 20px;
 }
 
+  /*OM OSS*/
+
+  .omossimg {
+    border-radius: 8px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 400px;
+  }
+
+.omossimgwrap {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #fdf3d6;
+  border-radius: 8px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+  .omosstext {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    max-width: 60ch;
+    margin: 0 auto;
+  }
+p+p {
+  text-indent: 1.5rem;
+}
+
+  /*FORMULÄR*/
+
+  form {
+    background-color: #fdf3d6;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  input,
+  textarea {
+    margin: 0.2rem;
+    border: 1px solid #acb2d3;
+    border-radius: 5px;
+  }
+
+  #formsection {
+    display: flex;
+    justify-content: center;
+    padding: 0.2rem;
+    padding-top: 1rem;
+  }
+
+ .labelform {
+      display: inline-block;
+      width: 7rem;
+      margin-bottom: 0.5rem;
+}
+
+.radiobutton{
+  margin: 0.5rem;
+}
+
+.boendesituation {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+  /*Stilsättning av intresseanmälanknapp plus hover och animation*/
+
+  #formbutton {
+    font-size: 1.2rem;
+    background-color: #edcccb;
+    padding: 0.2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.25s ease-in-out;
+    display: block;
+    margin: 1rem auto;
+  }
+
+  #formbutton:hover {
+    background-color: #acb2d3;
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+  }
