@@ -302,24 +302,27 @@ text-decoration: underline;
     flex-direction: column; /* staplar bilder lodrätt */
     gap: 20px;  
     margin-top: 20px;
-    width: 400px;
+    width: 600px;
 }
 
 .bilder-guide1 {
   border: 20px solid #fdf3d6;
-  width: 80%;/*gör att bilderna håller sig till höger med lite mellanrum*/
+  border-radius: 15px;
+  max-width: 95%; /*gör att bilderna håller sig till höger med lite mellanrum*/
   height: auto;
 }
 
 .bilder-guide2 {
   border: 20px solid #fdf3d6;
-  max-width: 80%;/*gör att bilderna håller sig till höger med lite mellanrum*/
+  border-radius: 15px;
+  max-width: 95%;/*gör att bilderna håller sig till höger med lite mellanrum*/
   height: auto;
 }
 
 .bilder-guide3 {
   border: 20px solid #fdf3d6;
-  max-width: 80%; /*gör att bilderna håller sig till höger med lite mellanrum*/
+  border-radius: 15px;
+  max-width: 95%; /*gör att bilderna håller sig till höger med lite mellanrum*/
   height: auto;
 }
 
