@@ -296,4 +296,40 @@ text-decoration: underline;
   margin-left: 20px;
 }
 
+.bilder-guide {
+    display: flex;
+    order: 2;
+    flex-direction: column; /* staplar bilder lodrätt */
+    gap: 20px;  
+    margin-top: 20px;
+    width: 400px;
+}
 
+.bilder-guide1 {
+  border: 20px solid #fdf3d6;
+  width: 80%;/*gör att bilderna håller sig till höger med lite mellanrum*/
+  height: auto;
+}
+
+.bilder-guide2 {
+  border: 20px solid #fdf3d6;
+  max-width: 80%;/*gör att bilderna håller sig till höger med lite mellanrum*/
+  height: auto;
+}
+
+.bilder-guide3 {
+  border: 20px solid #fdf3d6;
+  max-width: 80%; /*gör att bilderna håller sig till höger med lite mellanrum*/
+  height: auto;
+}
+
+.guide-text {
+  order: 1;
+  flex: 1;
+}
+
+.container-guide {
+    display: flex;           /* rad med två kolumner */
+    align-items: flex-start; /* börjar högst upp */
+    gap: 20px; 
+}
