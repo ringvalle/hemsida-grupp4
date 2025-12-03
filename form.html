@@ -33,47 +33,52 @@
     </header>
     <main>
     <!--Formulär för intresseanmälan-->
+    <section id="formsection">
     <form>
         <div>
-            <label for="firstname">Förnamn</label>
+            <label for="firstname" class="labelform">Förnamn:</label>
             <input type="text" id="firstname" name="firstname" required>
         </div>
         <div>
-            <label for="lastname">Efternamn</label>
+            <label for="lastname" class="labelform">Efternamn:</label>
             <input type="text" id="lastname" name="lastname" required>
         </div>
         <div>
-            <label for="email">E-postadress</label>
+            <label for="email" class="labelform">E-postadress:</label>
             <input type="email" id="email" name="email" required>
         </div>
-        <p>Boendesituation</p>
-        <div>
+        <section class="boendesituation">
+        <p>Boendesituation:</p>
+        <div class="radiobutton">
             <input type="radio" name="housing" value="1" id="smallapartment" required><label for="smallapartment">Liten lägenhet (mindre än 30 kvm)</label>
         </div>
-        <div>
+        <div class="radiobutton">
             <input type="radio" name="housing" value="2" id="bigapartment"><label for="bigapartment">Stor lägenhet (större än 30 kvm)</label>
         </div>
-        <div>
+        <div class="radiobutton">
             <input type="radio" name="housing" value="3" id="smallhouse"><label for="smallhouse">Litet hus</label>
         </div>
-        <div>
+        <div class="radiobutton">
             <input type="radio" name="housing" value="4" id="bighouse"><label for="bighouse">Stort hus</label>
         </div>
-        <div>
-            <label for="otherhousing">Annat boende</label>
-            <input type="text" id="otherhousing" name="otherhousing">
+        <div class="radiobutton">
+            <input type="radio" name="housing" value="5" id="otherhousing">
+            <label for="otherhousing">Annat boende:</label>
+            <input type="text" id="otherhousingtext" name="otherhousingtext">
         </div>
+        </section>
 
         <div>
-            <label for="erfarenhet">Tidigare erfarenhet av katter</label>
+            <label for="erfarenhet" class="labelform">Tidigare erfarenhet av katter:</label>
             <textarea rows="5" cols="50" id="erfarenhet" name="erfarenhet" required></textarea>
         </div>
         <div>
-            <label for="annaninfo">Annan info</label>
+            <label for="annaninfo" class="labelform">Annan info:</label>
             <textarea rows="5" cols="50" id="annaninfo" name="annaninfo"></textarea>
         </div>
-        <button type="submit">Skicka</button>
+        <button type="submit" id="formbutton">Skicka</button>
     </form>
+    </section>
     </main>
 
    <!-- Footer / kontaktinformation -->
