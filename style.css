@@ -375,6 +375,11 @@ text-decoration: underline;
 
   /*OM OSS*/
 
+  #omossh2 {
+    background-color: #fdf3d6;
+    border-radius: 8px;
+  }
+
   .omossimg {
     border-radius: 8px;
     margin-top: 1rem;
