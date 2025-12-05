@@ -1,4 +1,4 @@
-  /* 
+ /* 
    TRYGG TASSAR – BASSTILMALL
    Gäller alla sidor
   */
@@ -47,7 +47,7 @@
   h6 {
     font-family: "Bangla MN", "Georgia", serif;
     font-weight: 700;
-    color: #000000;
+    color: #2c3e50;
     padding: 20px;
     text-align: center;
   }
@@ -55,11 +55,12 @@
   h2 {
     font-family: "Bangla MN", "Georgia", serif;
     font-weight: 700;
-    color: #000000;
+    color: #2c3e50;
     padding: 10px;
     text-align: center;
     background-color: #fdf3d6;
     margin-bottom: 20px;
+    border-radius: 10px;
   }
 
 
@@ -202,7 +203,7 @@
     font-size: 1.1rem;
     margin-bottom: 1rem;
     text-align: center;
-    max-width: 900px;
+    max-width: 60ch;
     margin: 0 auto;
   }
 
@@ -303,10 +304,6 @@
     margin-bottom: 50px;
   }
 
-  .adoption-title h2 {
-    font-size: 2.5rem;
-    color: #2c3e50;
-  }
 
   /* Rad-layout – 50/50 */
   .step-row {
@@ -338,34 +335,23 @@
     font-size: 1.1rem;
   }
 
-  /* Bilddel – 50% bredd + bild skalas till textens höjd */
-  /* NYTT – tvingar bilderna att aldrig bli högre än texten */
-  .step-image {
-    flex: 1;
-    min-width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    /* ny rad */
-    max-height: 520px;
-    /* ny rad – justera efter smak */
-  }
-
-  .step-image img {
+.step-image img {
     width: 100%;
     height: 100%;
-    /* ändrat från "auto" */
-    max-width: 100%;
-    max-height: 520px;
-    /* samma värde som ovan */
-    object-fit: contain;
-    /* eller "cover" om du vill beskära */
-    object-position: center;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  }
+    object-fit: cover;      /* beskär snyggt */
+    border-radius: 8px;
+    border: 20px solid #fdf3d6;
+}
 
+.step-image img {
+  width: 100%;             /* fyll bredden */
+  height: auto;            /* låt höjden följa proportionerna */
+  max-height: 520px;       /* så de inte blir för höga */
+  object-fit: contain;     /* ingen beskärning, hela bilden syns */
+  object-position: center;
+  border-radius: 8px;      /* eller 0; båda funkar */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
 
 
 
@@ -373,7 +359,6 @@
 
   /* Stil för månad-rubrikerna */
   .månaderna {
-    color: #5C6AC4;
     background-color: #fdf3d6;
     display: inline-block;
     padding: 20px;
