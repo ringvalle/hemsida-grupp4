@@ -417,7 +417,32 @@
     gap: 20px; 
 }
 
+/*VAR-SYN-PÅ-AVEL*/
+.avel-img {
+     border-radius: 8px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 400px;
+    display: block;
+    border: 20px solid #fdf3d6;
+  border-radius: 15px;
+    float: left;         
+  margin: 0 15px 15px 0;  /* ger fint mellanrum runt bilden */
+  max-width: 40%;
+  }
 
+.avel-img2 {
+     border-radius: 8px;
+    width: 200px;
+    display: block;
+    border: 20px solid #fdf3d6;
+    float: right;         
+  margin:  10px ;  /* ger mellanrum runt bilden */
+}
+
+.aveltext {
+    margin-top: 30px;
+  }
 
 
 -----
