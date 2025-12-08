@@ -1,5 +1,5 @@
  /* 
-   TRYGG TASSAR – BASSTILMALL
+   TRYGG TASSAR - BASSTILMALL
    Gäller alla sidor
   */
 
@@ -338,18 +338,18 @@
 .step-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;      /* beskär snyggt */
+    object-fit: cover;     
     border-radius: 8px;
     border: 20px solid #fdf3d6;
 }
 
 .step-image img {
-  width: 100%;             /* fyll bredden */
-  height: auto;            /* låt höjden följa proportionerna */
-  max-height: 520px;       /* så de inte blir för höga */
-  object-fit: contain;     /* ingen beskärning, hela bilden syns */
+  width: 100%;          
+  height: auto;            
+  max-height: 520px;       
+  object-fit: contain;     
   object-position: center;
-  border-radius: 8px;      /* eller 0; båda funkar */
+  border-radius: 8px;      
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
