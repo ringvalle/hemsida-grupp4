@@ -378,7 +378,7 @@
 
 .bilder-guide {
     display: flex;
-    order: 2;
+    order: 2; /* placerar bilderna efter texten */
     flex-direction: column; /* staplar bilder lodrätt */
     gap: 60px;  
     margin-top: 60px;
@@ -408,7 +408,7 @@
 
 .guide-text {
   order: 1;
-  flex: 1;
+  flex: 1; /* tar upp resterande utrymme till vänster */
 }
 
 .container-guide {
@@ -422,33 +422,33 @@
      border-radius: 8px;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    width: 400px;
-    display: block;
+    width: 400px; /* storlek på bilden */
+    display: block; /* gör att bilden beter sig som ett blockelement */
     border: 20px solid #fdf3d6;
   border-radius: 15px;
-    float: left;         
+    float: left; /* låter texten flyta runt bilden */         
   margin: 0 15px 15px 0;  /* ger fint mellanrum runt bilden */
   max-width: 40%;
   }
 
 .avel-img2 {
      border-radius: 8px;
-    width: 300px;
-    display: block;
+    width: 300px; /* storlek på bilden */
+    display: block; /* gör att bilden beter sig som ett blockelement */
     border: 20px solid #fdf3d6;
-    float: right;         
+    float: right;         /* låter texten flyta runt bilden */
   margin:  10px ;  /* ger mellanrum runt bilden */
 }
 
 
 .aveltext {
-  max-width: 100ch ;
+  max-width: 100ch ; /* begränsar textens bredd för bättre läsbarhet */
     margin-top: 1rem;
-    margin: 0 auto;
+    margin: 0 auto; /* centrerar texten */
 }
 
 .aveltext1 {
-  max-width: 100ch;
+  max-width: 100ch; /* begränsar textens bredd för bättre läsbarhet */
     margin: 0 auto;
   }
 
