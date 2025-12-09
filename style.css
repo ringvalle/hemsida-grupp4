@@ -441,7 +441,8 @@
 }
 
 .aveltext {
-    margin-top: 30px;
+    margin-top:
+    max-width: 60ch;
   }
 
 
