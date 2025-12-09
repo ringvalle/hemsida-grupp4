@@ -520,13 +520,3 @@
     transform: scale(1.05);
   }
 
-  /*VÅR SYN PÅ AVEL*/
-
-    .avel {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-    max-width: 60ch;
-    margin: 0 auto;
-  }
-
-
