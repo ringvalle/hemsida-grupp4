@@ -203,7 +203,7 @@
     font-size: 1.1rem;
     margin-bottom: 1rem;
     text-align: center;
-    max-width: 60ch;
+    max-width: 70ch;
     margin: 0 auto;
   }
 
@@ -440,11 +440,16 @@
   margin:  10px ;  /* ger mellanrum runt bilden */
 }
 
+
 .aveltext {
   max-width: 100ch ;
     margin-top: 1rem;
     margin: 0 auto;
-     
+}
+
+.aveltext1 {
+  max-width: 100ch;
+    margin: 0 auto;
   }
 
 .aveltext2 {
@@ -490,7 +495,7 @@
   .omosstext {
     font-size: 1.1rem;
     margin-bottom: 1rem;
-    max-width: 60ch;
+    max-width: 70ch;
     margin: 0 auto;
   }
 
