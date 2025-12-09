@@ -10,83 +10,86 @@
 </head>
 
 <body>
-     <!-- Navigeringsmeny-->
+    <!-- Navigeringsmeny-->
     <header>
         <div class="header-inner">
             <img src="images/tryggatassarlogga.png" alt="Trygga Tassar logotyp" class="logo">
-        <div class="header-text">
-            <h1>Intresseformulär</h1>
+            <div class="header-text">
+                <h1>Intresseformulär</h1>
 
-            <nav>
-                <ul>
-                <li><a href="index.html">Våra katter</a></li>
-                <li><a href="om-oss.html">Om oss</a></li>
-                <li><a href="guide-vid-adoption.html">Guide vid adoption</a></li>
-                <li><a href="adoptionsprocessen.html">Adoptionsprocessen</a></li>
-                <li><a href="var-syn-pa-avel.html">Vår syn på avel</a></li>
-                </ul>
-            </nav>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Våra katter</a></li>
+                        <li><a href="om-oss.html">Om oss</a></li>
+                        <li><a href="guide-vid-adoption.html">Guide vid adoption</a></li>
+                        <li><a href="adoptionsprocessen.html">Adoptionsprocessen</a></li>
+                        <li><a href="var-syn-pa-avel.html">Vår syn på avel</a></li>
+                    </ul>
+                </nav>
 
-        </div>
+            </div>
         </div>
 
     </header>
     <main>
-    <!--Formulär för intresseanmälan-->
-    <section id="formsection">
-    <form>
-        <div>
-            <label for="firstname" class="labelform">Förnamn:</label>
-            <input type="text" id="firstname" name="firstname" required>
-        </div>
-        <div>
-            <label for="lastname" class="labelform">Efternamn:</label>
-            <input type="text" id="lastname" name="lastname" required>
-        </div>
-        <div>
-            <label for="email" class="labelform">E-postadress:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <section class="boendesituation">
-        <p>Boendesituation:</p>
-        <div class="radiobutton">
-            <input type="radio" name="housing" value="1" id="smallapartment" required><label for="smallapartment">Liten lägenhet (mindre än 30 kvm)</label>
-        </div>
-        <div class="radiobutton">
-            <input type="radio" name="housing" value="2" id="bigapartment"><label for="bigapartment">Stor lägenhet (större än 30 kvm)</label>
-        </div>
-        <div class="radiobutton">
-            <input type="radio" name="housing" value="3" id="smallhouse"><label for="smallhouse">Litet hus</label>
-        </div>
-        <div class="radiobutton">
-            <input type="radio" name="housing" value="4" id="bighouse"><label for="bighouse">Stort hus</label>
-        </div>
-        <div class="radiobutton">
-            <input type="radio" name="housing" value="5" id="otherhousing">
-            <label for="otherhousing">Annat boende:</label>
-            <input type="text" id="otherhousingtext" name="otherhousingtext">
-        </div>
-        </section>
+        <!--Formulär för intresseanmälan-->
+        <section id="formsection">
+            <form>
+                <div>
+                    <label for="firstname" class="labelform">Förnamn:</label>
+                    <input type="text" id="firstname" name="firstname" required>
+                </div>
+                <div>
+                    <label for="lastname" class="labelform">Efternamn:</label>
+                    <input type="text" id="lastname" name="lastname" required>
+                </div>
+                <div>
+                    <label for="email" class="labelform">E-postadress:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <section class="boendesituation">
+                    <p>Boendesituation:</p>
+                    <div class="radiobutton">
+                        <input type="radio" name="housing" value="1" id="smallapartment" required><label for="smallapartment">Liten lägenhet (mindre än 30 kvm)</label>
+                    </div>
+                    <div class="radiobutton">
+                        <input type="radio" name="housing" value="2" id="bigapartment"><label for="bigapartment">Stor lägenhet (större än 30 kvm)</label>
+                    </div>
+                    <div class="radiobutton">
+                        <input type="radio" name="housing" value="3" id="smallhouse"><label for="smallhouse">Litet hus</label>
+                    </div>
+                    <div class="radiobutton">
+                        <input type="radio" name="housing" value="4" id="bighouse"><label for="bighouse">Stort hus</label>
+                    </div>
+                    <div class="radiobutton">
+                        <input type="radio" name="housing" value="5" id="otherhousing">
+                        <label for="otherhousing">Annat boende:</label>
+                        <input type="text" id="otherhousingtext" name="otherhousingtext">
+                    </div>
+                </section>
+                <div>
+                    <label for="intressekatt" class="labelform">Katt du är intresserad av:</label>
+                    <input type="text" id="intressekatt" name="intressekatt" required>
+                </div>
 
-        <div>
-            <label for="erfarenhet" class="labelform">Tidigare erfarenhet av katter:</label>
-            <textarea rows="5" cols="50" id="erfarenhet" name="erfarenhet" required></textarea>
-        </div>
-        <div>
-            <label for="annaninfo" class="labelform">Annan info:</label>
-            <textarea rows="5" cols="50" id="annaninfo" name="annaninfo"></textarea>
-        </div>
-        <button type="submit" id="formbutton">Skicka</button>
-    </form>
-    </section>
+                <div>
+                    <label for="erfarenhet" class="labelform">Tidigare erfarenhet av katter:</label>
+                    <textarea rows="5" cols="50" id="erfarenhet" name="erfarenhet" required></textarea>
+                </div>
+                <div>
+                    <label for="annaninfo" class="labelform">Annan info:</label>
+                    <textarea rows="5" cols="50" id="annaninfo" name="annaninfo"></textarea>
+                </div>
+                <button type="submit" id="formbutton">Skicka</button>
+            </form>
+        </section>
     </main>
 
-   <!-- Footer / kontaktinformation -->
+    <!-- Footer / kontaktinformation -->
     <footer id="kontakt">
         <p>Kontakt: <a href="mailto:info@kattsidan.se">info@kattsidan.se</a></p>
         <p>Tel: 0123-456 789 · Adress: Exempelgatan 1, 123 45 Stad</p>
     </footer>
-</body> 
-</html>    
+</body>
 
-
+</html>
