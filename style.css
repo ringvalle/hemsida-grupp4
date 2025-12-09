@@ -435,6 +435,15 @@
     width: 400px;
   }
 
+  .ttlogga {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1rem;
+    padding-top: 2rem;
+  }
+
   .omossimgwrap {
     display: flex;
     justify-content: center;
