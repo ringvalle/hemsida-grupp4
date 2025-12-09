@@ -447,6 +447,15 @@
     margin-bottom: 1rem;
   }
 
+    .ttlogga {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1rem;
+    padding-top: 2rem;
+  }
+
   .omosstext {
     font-size: 1.1rem;
     margin-bottom: 1rem;
