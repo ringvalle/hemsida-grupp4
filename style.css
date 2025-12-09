@@ -433,7 +433,7 @@
 
 .avel-img2 {
      border-radius: 8px;
-    width: 200px;
+    width: 300px;
     display: block;
     border: 20px solid #fdf3d6;
     float: right;         
@@ -441,11 +441,16 @@
 }
 
 .aveltext {
-    margin-top:
-    max-width: 60ch;
+  max-width: 100ch ;
+    margin-top: 1rem;
+    margin: 0 auto;
+     
   }
 
-
+.aveltext2 {
+  margin: 0 auto;
+    margin-top: 1rem;
+    max-width: 100ch;
 -----
   /*OM OSS*/
 
