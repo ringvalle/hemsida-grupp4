@@ -33,7 +33,7 @@
     </header>
     <main>
         <!--Formulär för intresseanmälan-->
-        <section id="formsection">
+        <div id="formsection">
             <form>
                 <div>
                     <label for="firstname" class="labelform">Förnamn:</label>
@@ -47,7 +47,7 @@
                     <label for="email" class="labelform">E-postadress:</label>
                     <input type="email" id="email" name="email" required>
                 </div>
-                <section class="boendesituation">
+                <div class="boendesituation">
                     <p>Boendesituation:</p>
                     <div class="radiobutton">
                         <input type="radio" name="housing" value="1" id="smallapartment" required><label for="smallapartment">Liten lägenhet (mindre än 30 kvm)</label>
@@ -66,7 +66,7 @@
                         <label for="otherhousing">Annat boende:</label>
                         <input type="text" id="otherhousingtext" name="otherhousingtext">
                     </div>
-                </section>
+                </div>
                 <div>
                     <label for="intressekatt" class="labelform">Katt du är intresserad av:</label>
                     <input type="text" id="intressekatt" name="intressekatt" required>
@@ -82,7 +82,7 @@
                 </div>
                 <button type="submit" id="formbutton">Skicka</button>
             </form>
-        </section>
+        </div>
     </main>
 
     <!-- Footer / kontaktinformation -->
