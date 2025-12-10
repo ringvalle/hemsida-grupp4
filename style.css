@@ -426,6 +426,7 @@
  }
 
  /*VAR-SYN-PÅ-AVEL*/
+
  .avel-img {
    border-radius: 8px;
    margin-top: 1rem;
@@ -503,7 +504,7 @@
    padding: 0.5rem;
    margin-bottom: 1rem;
  }
-
+/*logga i slutet av texten*/
  .ttlogga {
    width: 200px;
    display: flex;
@@ -516,7 +517,7 @@
  .omosstext {
    font-size: 1.1rem;
    margin-bottom: 1rem;
-   max-width: 70ch;
+   max-width: 70ch;/*begränsar texten för läsbarhet*/
    margin: 0 auto;
  }
 
@@ -534,7 +535,7 @@
    border-radius: 10px;
    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
  }
-
+/*stilsättning av textboxarna*/
  input,
  textarea {
    margin: 0.2rem;
