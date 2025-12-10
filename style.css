@@ -335,17 +335,32 @@
    font-size: 1.1rem;
  }
 
- .step-image img {
-  width: 100%;
-  height: auto;
-  max-height: 520px;
-  object-fit: contain;
-  object-position: center;
-  border-radius: 8px;
-  border: 20px solid #fdf3d6;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  display: block;
+.step-image {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;  
+  
+
 }
+
+ 
+ .step-image img {
+   width: 100%;
+   height: auto;
+   max-height: 520px;
+   object-fit: contain;
+   object-position: center;
+   
+ }
+
+.frame {
+ box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+ border: 20px solid #fdf3d6; 
+ overflow: hidden;
+ 
+}
+
+
 
 
 
